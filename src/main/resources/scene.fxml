@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="600.0" prefWidth="1000.0" scaleShape="false" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ConnectionWithSceneB">
+
+      <Button layoutX="14.0" layoutY="8.0" mnemonicParsing="false" onAction="#loadFile" text="LoadFile" />
+      <ListView fx:id="classList" layoutX="211.0" layoutY="83.0" prefHeight="216.0" prefWidth="181.0" />
+      <ListView fx:id="directoryList" layoutX="19.0" layoutY="82.0" prefHeight="216.0" prefWidth="181.0" />
+      <Text layoutX="211.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Classes" />
+      <Text layoutX="19.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Directories" />
+      <Text layoutX="403.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Methods" />
+      <Text layoutX="792.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Constructors" />
+      <Text layoutX="597.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fields" />
+      <ListView fx:id="methodsList" layoutX="403.0" layoutY="83.0" prefHeight="216.0" prefWidth="181.0" />
+      <ListView fx:id="constructorsList" layoutX="792.0" layoutY="83.0" prefHeight="216.0" prefWidth="181.0" />
+      <ListView fx:id="fieldsList" layoutX="597.0" layoutY="82.0" prefHeight="216.0" prefWidth="181.0" />
+      <Button layoutX="17.0" layoutY="505.0" mnemonicParsing="false" onAction="#saveProject" prefHeight="71.0" prefWidth="114.0" text="Save project" />
+      <Button layoutX="174.0" layoutY="391.0" mnemonicParsing="false" onAction="#createFieldButton" prefHeight="25.0" prefWidth="114.0" text="Create field" />
+      <TextArea fx:id="nameArea" layoutX="19.0" layoutY="314.0" prefHeight="37.0" prefWidth="270.0" promptText="Write declaration here" />
+      <Button layoutX="175.0" layoutY="358.0" mnemonicParsing="false" onAction="#createMethodButton" prefHeight="25.0" prefWidth="114.0" text="Create method" />
+      <Button layoutX="173.0" layoutY="424.0" mnemonicParsing="false" onAction="#createConstructorButton" prefHeight="25.0" prefWidth="114.0" text="Create constructor" />
+      <Button layoutX="173.0" layoutY="458.0" mnemonicParsing="false" onAction="#createClassButton" prefHeight="25.0" prefWidth="114.0" text="Create class" />
+      <Button layoutX="173.0" layoutY="493.0" mnemonicParsing="false" onAction="#createDirectoryButton" prefHeight="25.0" prefWidth="114.0" text="Create directory" />
+      <Button layoutX="340.0" layoutY="314.0" mnemonicParsing="false" onAction="#deleteMethodButton" prefHeight="25.0" prefWidth="114.0" text="Delete method" />
+      <Button layoutX="340.0" layoutY="346.0" mnemonicParsing="false" onAction="#deleteFieldButton" prefHeight="25.0" prefWidth="114.0" text="Delete field" />
+      <Button layoutX="340.0" layoutY="378.0" mnemonicParsing="false" onAction="#deleteConstructorButton" text="Delete constructor" />
+      <Button layoutX="340.0" layoutY="411.0" mnemonicParsing="false" onAction="#deleteClassButton" prefHeight="25.0" prefWidth="114.0" text="Delete class" />
+      <Button layoutX="340.0" layoutY="444.0" mnemonicParsing="false" onAction="#deleteDirectoryButton" prefHeight="25.0" prefWidth="114.0" text="Delete directory" />
+      <TextArea fx:id="bodyArea" layoutX="477.0" layoutY="314.0" prefHeight="124.0" prefWidth="270.0" promptText="Write body method here" />
+      <Button layoutX="550.0" layoutY="518.0" mnemonicParsing="false" onAction="#writeEndMethodButton" prefHeight="25.0" prefWidth="197.0" text="Add to method at the end" />
+      <Button layoutX="550.0" layoutY="481.0" mnemonicParsing="false" onAction="#writeBeginMethodButton" prefHeight="25.0" prefWidth="197.0" text="Add to method at the beginning" />
+      <Button layoutX="550.0" layoutY="446.0" mnemonicParsing="false" onAction="#overwriteMethodButton" prefHeight="25.0" prefWidth="197.0" text="Overwrite method" />
+      <Button layoutX="550.0" layoutY="551.0" mnemonicParsing="false" onAction="#overwriteConstructorButton" prefHeight="25.0" prefWidth="197.0" text="Overwrite constructor" />
+      <Button layoutX="784.0" layoutY="327.0" mnemonicParsing="false" onAction="#createClassInheritingByThreadButton" text="Create inheriting class" />
+</Pane>
